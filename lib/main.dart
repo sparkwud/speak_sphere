@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:speak_sphere/utils/routes/router.dart';
+import 'package:speak_sphere/utils/theme/pallete.dart';
 
 void main() {
   runApp(
@@ -24,6 +25,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Speak Sphere',
         theme: ThemeData(
+          scaffoldBackgroundColor: scaffoldBg,
+          fontFamily: "Josefin Sans",
           useMaterial3: true,
         ),
         routerConfig: appRouter,
