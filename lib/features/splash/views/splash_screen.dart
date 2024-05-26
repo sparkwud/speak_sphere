@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:speak_sphere/features/home/views/interests_screen.dart';
+import 'package:speak_sphere/features/home/views/screens/interests_screen.dart';
 import 'package:speak_sphere/utils/constants/app_drawables.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -270,7 +270,7 @@ class _SplashScreenState extends State<SplashScreen>
                     var tween = Tween(begin: begin, end: end)
                         .chain(CurveTween(curve: curve));
 
-                    return SlideTransition(
+                    return SlideTransition( 
                       position: animation.drive(tween),
                       child: child,
                     );
